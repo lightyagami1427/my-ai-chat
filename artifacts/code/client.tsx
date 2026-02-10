@@ -252,7 +252,7 @@ export const codeArtifact = new Artifact<"code", Metadata>({
       onClick: ({ sendMessage }) => {
         sendMessage({
           role: "user",
-          content: "", // FIX: Added content property
+          content: "", // <--- THIS LINE FIXES THE ERROR
           parts: [
             {
               type: "text",
@@ -268,7 +268,7 @@ export const codeArtifact = new Artifact<"code", Metadata>({
       onClick: ({ sendMessage }) => {
         sendMessage({
           role: "user",
-          content: "", // FIX: Added content property
+          content: "", // <--- THIS LINE FIXES THE ERROR
           parts: [
             {
               type: "text",
